@@ -1,0 +1,16 @@
+    .startPage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+  .startButton{
+    color: rgb(230, 221, 152);
+    font-weight: 700;
+    border: 2px solid rgb(230, 221, 152);
+    background-color: rgba(235, 211, 3, 0.6);
+    border-radius: 12px;
+    padding: 10px 15px;
+    width: 150px;
+  }

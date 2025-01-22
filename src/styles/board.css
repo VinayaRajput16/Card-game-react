@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+
+body {
+  background: url('./bg-game.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0 20px;
+}
+
+div {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  color: rgb(230, 221, 152);
+  word-spacing: 10px;
+  letter-spacing: 4px;
+  font-family: "Atma", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.showLevel {
+  max-width: 50%;
+  font-size: 1.8rem;
+  color: rgb(230, 221, 152);
+  font-weight: 700;
+  border: 2px solid rgb(230, 221, 152);
+  background-color: rgba(235, 211, 3, 0.6);
+  border-radius: 12px;
+  padding: 8px 6px;
+  font-family: "Barriecito", serif;
+  font-style: normal;
+  margin: 10px auto;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: rgb(230, 221, 152);
+  font-family: "Barriecito", serif;
+  font-style: normal;
+}
+
+.game-over {
+  text-align: center;
+  margin: 20px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries for small devices */
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-attachment: scroll; /* Optimize for smaller devices */
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+  }
+
+  .showLevel {
+    max-width: 90%; /* Adjust width for small screens */
+    font-size: 1.5rem;
+    padding: 6px 4px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .board {
+    gap: 5px; /* Increase spacing for better visibility */
+  }
+
+  button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+  }
+
+  .showLevel {
+    max-width: 95%;
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+
+  .board {
+    gap: 3px; /* Optimize spacing for very small screens */
+  }
+}
